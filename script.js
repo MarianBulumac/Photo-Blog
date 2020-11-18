@@ -35,7 +35,7 @@ async function draw() {
         }
 
         str += `
-    
+    <FIGURE>
     <img
       id="myImg"
       src="${list[i].imagine}"
@@ -45,7 +45,8 @@ async function draw() {
       height="500"
       style="margin-bottom:25px;"
     />
-
+    <FIGCAPTION>${list[i].detalii}</FIGCAPTION>
+</FIGURE>
     `;
 
 
