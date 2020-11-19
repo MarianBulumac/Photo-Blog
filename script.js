@@ -43,9 +43,9 @@ async function draw() {
       class="w3-image"
       width="1000"
       height="500"
-      style="margin-bottom:25px;"
+      style="margin-top:25px;"
     />
-    <FIGCAPTION style="text-align:center">${list[i].detalii}</FIGCAPTION>
+    <FIGCAPTION style="text-align:center;margin-top:5px">${list[i].detalii}</FIGCAPTION>
     </FIGURE>
     `;
 

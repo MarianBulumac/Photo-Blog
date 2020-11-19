@@ -1,0 +1,133 @@
+.main {
+    width: 60%;
+    background-color:grey;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+
+input,
+textarea {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+
+
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.butonSubmit {
+    text-align: center;
+}
+
+button {
+    background-color:black;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    margin: 5px;
+}
+
+button:hover {
+    background-color:blue;
+    color: white;
+}
+
+.afisareLista {
+    margin-top: 30px;
+}
+
+.modificaButton {
+    background-color: #f0decb;
+    padding: 10px;
+    border-radius: 7px;
+    color: #504658;
+}
+
+.modificaButton:hover {
+    background-color: #0069d9;
+    color: white;
+}
+
+.stergeButton {
+    background-color: red;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+}
+
+.stergeButton:hover {
+    background-color: salmon;
+}
+
+
+td {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+.home a {
+    float: right;
+    color: black;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: #0069d9;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+    text-align: center;
+}
+
+.backgroundLoader {
+    position: fixed;
+    background-color: rgba(255, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}

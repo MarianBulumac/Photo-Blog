@@ -1,3 +1,7 @@
+body{
+  background-color: grey;
+}
+
 /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;
@@ -168,7 +172,7 @@ body {
     height: 75px;
     position: fixed;
     bottom: 25px;
-    left: 20px;
+    right: 20px;
     display: none;
   }
   .scroll-top i {
@@ -213,4 +217,7 @@ body {
   .navbar-default .navbar-nav>li>a:hover {
     color: #fff;
     background-color: #0392CC;
+  }
+  .btn-primary{
+    background-color: black !important;
   }
