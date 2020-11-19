@@ -25,8 +25,7 @@
 
       <a href="admin/admin.html">Admin</a>
 
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
 
     <div id="main">
@@ -89,44 +88,71 @@
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
       </div>
-      <p class="w3-center"><a href="#top">Back top</a></p>
+      <br />
+      <hr />
+      <p class="w3-center"><a href="#top">Inapoi sus.</a></p>
       <!-- Contact -->
-      <div
-        class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top"
-        id="contact"
-      >
-        <h3 class="w3-center">Contact</h3>
-        <hr />
-        <p>Pentru a ma contacta, va rog folositi formularul de mai jos.</p>
+      <div id="contact" class="fcf-body">
+        <div id="fcf-form">
+          <h3 class="fcf-h3">Contact us</h3>
 
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-section">
-            <label>Name</label>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              required
-              name="Name"
-            />
-          </div>
-          <div class="w3-section">
-            <label>Email</label>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              required
-              name="Email"
-            />
-          </div>
-          <div class="w3-section">
-            <label>Message</label>
-            <input class="w3-input w3-border" required name="Message" />
-          </div>
-          <button type="submit" class="w3-button w3-block w3-dark-grey">
-            Send
-          </button>
-        </form>
-        <br />
+          <form
+            id="fcf-form-id"
+            class="fcf-form-class"
+            method="post"
+            action="contact-form-process.php"
+          >
+            <div class="fcf-form-group">
+              <label for="Name" class="fcf-label">Your name</label>
+              <div class="fcf-input-group">
+                <input
+                  type="text"
+                  id="Name"
+                  name="Name"
+                  class="fcf-form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Email" class="fcf-label">Your email address</label>
+              <div class="fcf-input-group">
+                <input
+                  type="email"
+                  id="Email"
+                  name="Email"
+                  class="fcf-form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Message" class="fcf-label">Your message</label>
+              <div class="fcf-input-group">
+                <textarea
+                  id="Message"
+                  name="Message"
+                  class="fcf-form-control"
+                  rows="6"
+                  maxlength="3000"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <button
+                type="submit"
+                id="fcf-button"
+                class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
 
       <!-- End page content -->
